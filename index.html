@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Storytelling Studio | Luxury Wedding Photography</title>
+    <meta name="description" content="Premium, cinematic wedding photography and videography services.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- The magical fire particle canvas -->
+    <canvas id="fire-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Visual Storytelling</div>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonials">Love Stories</a></li>
+            <li><a href="#pricing">Packages</a></li>
+            <li><a href="#contact" class="nav-btn">Book Us</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero parallax" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+            <h1 class="glow-text">Visual Storytelling Studio</h1>
+            <p class="subtitle">Cinematic Wedding Photography by Aniket</p>
+            <p class="emotional-subtitle">Capturing love stories that echo through time.</p>
+            <a href="#portfolio" class="btn btn-primary ripple-btn">View Portfolio</a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll to Explore</p>
+        </div>
+    </header>
+
+    <!-- About The Photographer -->
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-image reveal">
+                    <img src="assets/aniket_portrait.png" alt="Aniket - Visual Storytelling Studio Photographer">
+                    <div class="experience-badge">
+                        <span class="badge-num">8+</span>
+                        <span class="badge-text">Years<br>Experience</span>
+                    </div>
+                </div>
+                <div class="about-content reveal" style="transition-delay: 0.2s;">
+                    <h2>Meet Aniket</h2>
+                    <div class="divider" style="margin: 0 0 1.5rem;"></div>
+                    <h3>The Storyteller Behind the Lens</h3>
+                    <p class="bio-text">I believe every love story is unique and deserves to be captured with authenticity, grandeur, and deep emotional resonance. From the nervous glances before the altar to the wild celebrations at the reception, I freeze these fleeting moments so you can relive them forever.</p>
+                    
+                    <div class="quote-box glass-card">
+                        <p>“Your wedding is not a photoshoot — it’s a story waiting to be told.”</p>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-icon">📸</span>
+                            <span class="stat-value">300+</span>
+                            <span class="stat-label">Weddings Captured</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-icon">✈️</span>
+                            <span class="stat-label">Destination Specialist</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-icon">🏆</span>
+                            <span class="stat-label">Award-Winning Storytelling</span>
+                        </div>
+                    </div>
+
+                    <div class="social-actions">
+                        <a href="#contact" class="btn btn-primary ripple-btn"><i class="fab fa-whatsapp"></i> Chat with Aniket</a>
+                        <a href="#portfolio" class="btn btn-outline ripple-btn"><i class="fab fa-instagram"></i> Follow Aniket</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="services section-padding" id="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Our Expertise</h2>
+                <div class="divider"></div>
+                <p>Crafting memories that feel like a movie.</p>
+            </div>
+            
+            <div class="service-grid">
+                <div class="service-card glass-card reveal">
+                    <div class="icon-glow">📷</div>
+                    <h3>Wedding Photography</h3>
+                    <p>High-resolution, deeply emotional stills that freeze your most precious moments in time forever.</p>
+                </div>
+                <div class="service-card glass-card reveal" style="transition-delay: 0.1s;">
+                    <div class="icon-glow">🎥</div>
+                    <h3>Cinematic Videography</h3>
+                    <p>4K cinematic films complete with drone footage, audio mastering, and Hollywood-grade color grading.</p>
+                </div>
+                <div class="service-card glass-card reveal" style="transition-delay: 0.2s;">
+                    <div class="icon-glow">✨</div>
+                    <h3>Pre-Wedding Shoots</h3>
+                    <p>Tell your unique love story before the big day with conceptual out-of-the-box photoshoots.</p>
+                </div>
+                <div class="service-card glass-card reveal" style="transition-delay: 0.3s;">
+                    <div class="icon-glow">✈️</div>
+                    <h3>Destination Weddings</h3>
+                    <p>Wherever your love takes you, we travel the globe to capture your vows against breathtaking backdrops.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Portfolio Showcase -->
+    <section class="portfolio section-padding" id="portfolio">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>The Art of Love</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="portfolio-gallery masonry-grid">
+                <div class="gallery-item item-large reveal" onclick="openLightbox('assets/photo_1.png')">
+                    <img src="assets/photo_1.png" loading="lazy" alt="Luxury Wedding Rings Details">
+                    <div class="gallery-overlay">
+                        <h3>Detailed Elegance</h3>
+                        <p>The Finer Things</p>
+                    </div>
+                </div>
+                <!-- Since we have limited generated images, we will reuse them to show the masonry layout -->
+                <div class="gallery-item item-medium reveal" style="transition-delay: 0.1s;" onclick="openLightbox('assets/photo_2.png')">
+                    <img src="assets/photo_2.png" loading="lazy" alt="Destination Sunset Wedding">
+                    <div class="gallery-overlay">
+                        <h3>Golden Vows</h3>
+                        <p>Destination Magic</p>
+                    </div>
+                </div>
+                <div class="gallery-item item-tall reveal" style="transition-delay: 0.2s;" onclick="openLightbox('assets/hero_bg_generated.png')">
+                    <img src="assets/hero_bg_generated.png" loading="lazy" alt="Cinematic Sunset Wedding">
+                    <div class="gallery-overlay">
+                        <h3>Sacred Bonds</h3>
+                        <p>Grandeur & Emotion</p>
+                    </div>
+                </div>
+                 <div class="gallery-item item-wide reveal" style="transition-delay: 0.3s;" onclick="openLightbox('assets/photo_1.png')">
+                    <img src="assets/photo_1.png" loading="lazy" alt="Cinematic Church Wedding">
+                    <div class="gallery-overlay">
+                        <h3>Eternal Promise</h3>
+                        <p>Black & White Emotion</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section-padding" id="testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Love Stories</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="testimonial-slider reveal">
+                <div class="testimonial-card glass-card">
+                    <img class="couple-photo" src="assets/photo_2.png" alt="Sophia & James">
+                    <div class="quote-mark">"</div>
+                    <div class="stars">★★★★★</div>
+                    <p>"Visual Storytelling Studio didn't just take pictures; they captured the very soul of our wedding day. Watching our cinematic video feels like reliving a fairy tale every single time."</p>
+                    <h4>— Sophia & James</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing / Packages Section -->
+    <section class="pricing section-padding" id="pricing">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Investment</h2>
+                <div class="divider"></div>
+                <p>Packages designed for your perfect day.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card glass-card reveal">
+                    <h3>The Storyteller</h3>
+                    <div class="price"><span>$</span>3,500</div>
+                    <ul>
+                        <li>8 Hours Photography</li>
+                        <li>High-Res Digital Gallery</li>
+                        <li>Engagement Session</li>
+                        <li>1 Photographer</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline ripple-btn">Inquire Now</a>
+                </div>
+                <div class="pricing-card glass-card premium-card reveal" style="transition-delay: 0.1s;">
+                    <div class="badge">Most Popular</div>
+                    <h3>The Cinematic</h3>
+                    <div class="price"><span>$</span>5,800</div>
+                    <ul>
+                        <li>10 Hours Photo & Video</li>
+                        <li>5-Minute Highlight Film</li>
+                        <li>Drone Footage</li>
+                        <li>Premium Album</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary ripple-btn">Inquire Now</a>
+                </div>
+                <div class="pricing-card glass-card reveal" style="transition-delay: 0.2s;">
+                    <h3>The Masterpiece</h3>
+                    <div class="price"><span>$</span>8,500</div>
+                    <ul>
+                        <li>Unlimited Full Day Coverage</li>
+                        <li>10-Minute Feature Film</li>
+                        <li>Destination Travel Included</li>
+                        <li>Next-Day Teaser</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline ripple-btn">Inquire Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Booking Section -->
+    <section class="contact section-padding" id="contact">
+        <div class="container">
+            <div class="contact-wrapper glass-card reveal">
+                <div class="contact-info">
+                    <h2>Reserve Your Date</h2>
+                    <p>We take a limited number of weddings each year to ensure the highest quality experience for our couples. Let's create magic together.</p>
+                    <div class="contact-details">
+                        <p>📍 Worldwide Output</p>
+                        <p>✉️ hello@visualstory.studio</p>
+                        <p>📞 +1 (800) 123-4567</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" required placeholder=" ">
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required placeholder=" ">
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" id="date" required placeholder=" ">
+                        <label for="date">Wedding Date</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="4" required placeholder=" "></textarea>
+                        <label for="message">Tell us about your dream wedding</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary ripple-btn form-submit">Send Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">Visual Storytelling Studio</div>
+                <p>&copy; 2026 Visual Storytelling Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/18001234567" class="floating-whatsapp" target="_blank" aria-label="Chat with us on WhatsApp">
+        <svg viewBox="0 0 32 32" width="32" height="32" fill="white">
+            <path d="M16 2.5C8.5 2.5 2.5 8.5 2.5 16c0 2.4.6 4.7 1.8 6.6L2.5 29.5l7.1-1.8c1.9 1.1 4 1.7 6.4 1.7 7.5 0 13.5-6 13.5-13.5S23.5 2.5 16 2.5zm0 24.8c-2 0-3.9-.5-5.6-1.5l-.4-.2-4.1 1 1.1-4-.2-.4C5.7 20.3 5 18.2 5 16c0-6.1 5-11 11-11s11 4.9 11 11-4.9 11-11 11zm6-8.1c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-.1.2.2.3.5.4.7.4.7 1.7 1.4 3 2.5 4.1 1.4 1.4 2.8 2 3.6 2.1.8.1 1.3-.1 1.8-.4.5-.3.8-.9 1-1.2.1-.3.1-.6.1-.7-.1-.1-.3-.2-.7-.4z"/>
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
