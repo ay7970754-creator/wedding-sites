@@ -10,10 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
-<body>
-    <video autoplay muted loop playsinline class="bg-video">
-  <source src="background.mp4" type="video/mp4">
-</video>
     <!-- The magical fire particle canvas -->
     <canvas id="fire-canvas"></canvas>
 
@@ -36,6 +32,11 @@
 
     <!-- Hero Section -->
     <header class="hero parallax" id="home">
+        <video autoplay muted loop playsinline class="hero-video">
+<source src="background.mp4" type="video/mp4">
+</video>
+
+<div class="hero-overlay"></div>
         <div class="hero-overlay"></div>
         <div class="hero-content reveal">
             <h1 class="glow-text">Visual Storytelling Studio</h1>
