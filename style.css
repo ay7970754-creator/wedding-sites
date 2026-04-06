@@ -258,10 +258,18 @@ p {
     align-items: center;
     justify-content: center;
     position: relative;
-    background-image: url('https://canva.link/su0dnwetietksiv');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    
+}
+.hero-video{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:0;
 }
 
 .hero-overlay {
